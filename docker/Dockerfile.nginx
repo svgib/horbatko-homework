@@ -1,0 +1,15 @@
+FROM nginx 
+
+EXPOSE 80/tcp
+
+ENV www=/usr/share/nginx/html
+ENV MY_NAME=Ihor
+
+WORKDIR /$www
+VOLUME /$www
+
+COPY index.html $www
+COPY entrypoint.sh $www
+
+#CMD chmod 777 $www/entrypoint.sh
+#CMD sh -c "$www/entrypoint.sh"
