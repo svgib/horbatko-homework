@@ -1,0 +1,17 @@
+- hosts: stage01
+  become: true
+  roles:
+    - jenkins 
+
+      #- host: db_host 
+      #  became: true
+      #    - db
+
+      #- host: redis_host 
+      #  became: true
+      #    - redis
+
+      #- host: s3_bucket_name
+      #    - s3_horbatko
+ 
+

@@ -1,0 +1,7 @@
+- hosts: stage
+  become: true
+  vars:
+    admin_group: wheel
+    env: dev
+  roles:
+    - geerlingguy.nginx

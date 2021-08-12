@@ -1,0 +1,5 @@
+- hosts: stage
+  become: true
+  roles:
+    - geerlingguy.nginx
+
